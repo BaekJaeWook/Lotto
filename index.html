@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="./assets/favicon .ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>동행복권</title>
+</head>
+
+<body>
+  <!-- 배너 시작-->
+  <div class="banner">
+    <div class="container">
+      <div class="banner__wrap">
+        <img class="banner__img"src="./assets/images/01.banner/logo-header.png" alt="">
+        <div class="banner__login-wrap">
+          <div class="banner__login">로그인</div>
+          <div class="banner__join">회원가입</div>
+          <div class="banner__bar">ㅣ</div>
+          <div class="banner__mypage">마이페이지</div>
+          <div class="banner__center">고객센터</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 배너 끝-->
+  <!-- 카달로그 시작-->
+  <div class="catalog">
+    <div class="container">
+      <div class="catalog__item">
+        <div class="catalog__wrap">
+          <div class="catalog__text" data-navi="onenavi">복권구매</div>
+          <div class="catalog__text" data-navi="twonavi">복권정보</div>
+          <div class="catalog__text" data-navi="threenavi">당첨결과</div>
+          <div class="catalog__text" data-navi="fournavi">판매점</div>
+          <div class="catalog__text" data-navi="fivenavi">이벤트</div>
+          <div class="catalog__text" data-navi="sixnavi">행복공감</div>
+        </div>
+          <div class="navigation__wrap">
+            <div class="navigation__one navi" id="one">
+              <div class="container">
+                <div class="navigation__one-wrap navigation__one-wrap">
+                  <div class="navigation__one-wrap-item">
+                    <div class="navigation__one-wrap-iist">
+                      <img class="navigation__one-wrap-item-img"src="./assets/images/banner-photo/img_gnb_game1.jpg" alt="">
+                      <div class="navigation__one-wrap-item-text-title">로또 6/45</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      매주 토요일 추첨</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      6개 숫자 직접 선택</div>
+                    </div> 
+                  </div>  
+                  <div class="navigation__one-wrap-item">
+                    <div class="navigation__one-wrap-iist">
+                      <img class="navigation__one-wrap-item-img"src="./assets/images/banner-photo/img_gnb_game2.jpg" alt="">
+                      <div class="navigation__one-wrap-item-text-title">파워볼</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      5분마다 추첨</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      최고당첨금 3억</div>
+                    </div> 
+                  </div>  
+                  <div class="navigation__one-wrap-item">
+                    <div class="navigation__one-wrap-iist">
+                      <img class="navigation__one-wrap-item-img"src="./assets/images/banner-photo/img_gnb_game3.jpg" alt="">
+                      <div class="navigation__one-wrap-item-text-title">스피드키노</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      5분마다 추첨</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      숫자 10개 일치시 1등</div>
+                    </div> 
+                  </div>  
+                  <div class="navigation__one-wrap-item">
+                    <div class="navigation__one-wrap-iist">
+                      <img class="navigation__one-wrap-item-img"src="./assets/images/banner-photo/img_gnb_game4.jpg" alt="">
+                      <div class="navigation__one-wrap-item-text-title">메가빙고</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      7분마다 추첨</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      가장 높은 당첨확률</div>
+                    </div> 
+                  </div>  
+                  <div class="navigation__one-wrap-item">
+                    <div class="navigation__one-wrap-iist">
+                      <img class="navigation__one-wrap-item-img"src="./assets/images/banner-photo/img_gnb_game5.jpg" alt="">
+                      <div class="navigation__one-wrap-item-text-title">트리플럭</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      한번에 3게임! 1등 5억원</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      즉석식 긁는 복권</div>
+                    </div> 
+                  </div>  
+                </div>
+                <div class="navigation__one-wrap navigation__one-wrap--top">
+                  <div class="navigation__one-wrap-item">
+                    <div class="navigation__one-wrap-iist">
+                      <img class="navigation__one-wrap-item-img"src="./assets/images/banner-photo/img_gnb_game6.jpg" alt="">
+                      <div class="navigation__one-wrap-item-text-title">연금복권</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      매주 수요일 추첨</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      500만원씩 20년 지급</div>
+                    </div> 
+                  </div>  
+                  <div class="navigation__one-wrap-item">
+                    <div class="navigation__one-wrap-iist">
+                      <img class="navigation__one-wrap-item-img"src="./assets/images/banner-photo/img_gnb_game7.jpg" alt="">
+                      <div class="navigation__one-wrap-item-text-title">트레져헌터</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      왕관이 5개 나오면 1등</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      심볼매치형 즉석복권</div>
+                    </div> 
+                  </div>  
+                  <div class="navigation__one-wrap-item">
+                    <div class="navigation__one-wrap-iist">
+                      <img class="navigation__one-wrap-item-img"src="./assets/images/banner-photo/img_gnb_game8.jpg" alt="">
+                      <div class="navigation__one-wrap-item-text-title">캐치미</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      당첨금x5배 선택가능</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      보너스 게임 기회도~</div>
+                    </div> 
+                  </div>  
+                  <div class="navigation__one-wrap-item">
+                    <div class="navigation__one-wrap-iist">
+                      <img class="navigation__one-wrap-item-img"src="./assets/images/banner-photo/img_gnb_game9.jpg" alt="">
+                      <div class="navigation__one-wrap-item-text-title">더블잭마이더스</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      같은 그림이 나오면 당첨</div>
+                      <div class="navigation__one-wrap-item-text-color">
+                      구매즉시 당첨확인</div>
+                    </div> 
+                  </div>  
+                  <div class="navigation__one-wrap-item--last navigation__one-wrap-item-color">
+                    <div class="navigation__one-wrap-iist">
+                      <img class="navigation__one-wrap-item-img-last"src="./assets/images/banner-photo/bg_gnb_game_sample.png" alt="">
+                      <div class="navigation__one-wrap-item-text-title navigation__one-wrap-item-text-title-color">
+                        샘플게임
+                      <br>해보기</div>
+                    </div> 
+                  </div>  
+                </div>
+              </div>
+            </div>
+            <div class="navigation__two navi" id="two">
+              <div class="container">
+                <div class="navigation__two-wrap">
+                  <div class="navigation__two-wrap-item">
+                    <div class="navigation__two-wrap-item-box">
+                      <div class="navigation__two-wrap-item-title">로또6/45</div>
+                      <div class="navigation__two-wrap-item-text">로또 6/45 소개</div>
+                      <div class="navigation__two-wrap-item-text">구매하기</div>
+                      <div class="navigation__two-wrap-item-text">구매방법</div>
+                      <div class="navigation__two-wrap-item-text">추첨안내</div>
+                      <div class="navigation__two-wrap-item-text">로또 히스토리</div>
+                    </div>
+                  </div>
+                  <div class="navigation__two-wrap-item">
+                    <div class="navigation__two-wrap-item-box">
+                      <div class="navigation__two-wrap-item-title">연금복권520</div>
+                      <div class="navigation__two-wrap-item-text">연금복권520 소개</div>
+                      <div class="navigation__two-wrap-item-text">구매하기</div>
+                      <div class="navigation__two-wrap-item-text">구매방법</div>
+                      <div class="navigation__two-wrap-item-text">추첨안내</div>
+                    </div>
+                  </div>
+                  <div class="navigation__two-wrap-item">
+                    <div class="navigation__two-wrap-item-box">
+                      <div class="navigation__two-wrap-item-title">전자복권</div>
+                      <div class="navigation__two-wrap-item-text">게임안내</div>
+                      <div class="navigation__two-wrap-item-text">파워볼</div>
+                      <div class="navigation__two-wrap-item-text">스피드키노</div>
+                      <div class="navigation__two-wrap-item-text">메가빙고</div>
+                      <div class="navigation__two-wrap-item-text">트리플럭</div>
+                      <div class="navigation__two-wrap-item-text">트레져헌터</div>
+                      <div class="navigation__two-wrap-item-text">더블잭마이더스</div>
+                      <div class="navigation__two-wrap-item-text">캐치미</div>
+                    </div>
+                  </div>
+                  <div class="navigation__two-wrap-item">
+                    <div class="navigation__two-wrap-item-box">
+                      <div class="navigation__two-wrap-item-title">즉석식인쇄복권</div>
+                      <div class="navigation__two-wrap-item-text">즉석식인쇄복권 소개</div>
+                      <div class="navigation__two-wrap-item-text">스피또 500</div>
+                      <div class="navigation__two-wrap-item-text">스피또 1000</div>
+                      <div class="navigation__two-wrap-item-text">스피또 2000</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="navigation__three navi" id="three">
+              <div class="container">
+                <div class="navigation__three-wrap">
+                  <div class="navigation__three-wrap-item">
+                    <div class="navigation__three-wrap-item-box">
+                      <div class="navigation__three-wrap-item-title">로또6/45</div>
+                      <div class="navigation__three-wrap-item-text">회차별 당첨번호</div>
+                      <div class="navigation__three-wrap-item-text">내번호 당첨확인</div>
+                      <div class="navigation__three-wrap-item-text">당첨내역</div>
+                      <div class="navigation__three-wrap-item-text">당첨금 지급안내</div>
+                      <div class="navigation__three-wrap-item-text">추첨방송 다시보기</div>
+                      <div class="navigation__three-wrap-item-text">추첨방송 참관신청</div>
+                    </div>
+                  </div>
+                  <div class="navigation__three-wrap-item">
+                    <div class="navigation__three-wrap-item-box">
+                      <div class="navigation__three-wrap-item-title">연금복권520</div>
+                      <div class="navigation__three-wrap-item-text">회차별 당첨번호</div>
+                      <div class="navigation__three-wrap-item-text">내번호 당첨확인</div>
+                      <div class="navigation__three-wrap-item-text">당첨내역</div>
+                      <div class="navigation__three-wrap-item-text">당첨금지급안내</div>
+                      <div class="navigation__three-wrap-item-text">추첨방송 다시보기</div>
+                      <div class="navigation__three-wrap-item-text">추첨방송 참관신청</div>
+                    </div>
+                  </div>
+                  <div class="navigation__three-wrap-item">
+                    <div class="navigation__three-wrap-item-box">
+                      <div class="navigation__three-wrap-item-title">전자복권</div>
+                    </div>
+                  </div>
+                  <div class="navigation__three-wrap-item">
+                    <div class="navigation__three-wrap-item-box">
+                      <div class="navigation__three-wrap-item-title">즉석식인쇄복권</div>
+                      <div class="navigation__three-wrap-item-text">당첨내역</div>
+                      <div class="navigation__three-wrap-item-text">당첨금 지급안내</div>
+                    </div>
+                  </div>
+                  <div class="navigation__three-wrap-item navigation__three-wrap-item-right">
+                    <div class="navigation__three-wrap-item-box">
+                      <div class="navigation__three-wrap-item-title">로또6/45 당첨통계</div>
+                      <div class="navigation__three-wrap-item-text">당첨통계</div>
+                      <div class="navigation__three-wrap-item-text">번호별 통계</div>
+                      <div class="navigation__three-wrap-item-text">색상 통계</div>
+                      <div class="navigation__three-wrap-item-text">구간별 출현횟수</div>
+                      <div class="navigation__three-wrap-item-text">기간별 미출현 번호</div>
+                      <div class="navigation__three-wrap-item-text">홀짝통계</div>
+                      <div class="navigation__three-wrap-item-text">연속번호 출현</div>
+                      <div class="navigation__three-wrap-item-text">패턴분석표</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="navigation__three-wrap-two">
+                  <div class="navigation__three-wrap-item-two">
+                    <div class="navigation__three-wrap-item-box">
+                      <div class="navigation__three-wrap-item-title">연금복권520 당첨통계</div>
+                    </div>
+                  </div>
+                  <div class="navigation__three-wrap-item-two">
+                    <div class="navigation__three-wrap-item-box">
+                      <div class="navigation__three-wrap-item-title">당첨소식</div>
+                      <div class="navigation__three-wrap-item-text">당첨자 인터뷰</div>
+                      <div class="navigation__three-wrap-item-text">당첨 소감 게시판</div>
+                    </div>
+                  </div>
+                  <div class="navigation__three-wrap-item-two">
+                    <div class="navigation__three-wrap-item-box">
+                      <div class="navigation__three-wrap-item-title">미수령 당첨금</div>
+                      <div class="navigation__three-wrap-item-text">로또6/45</div>
+                      <div class="navigation__three-wrap-item-text">연금복권520</div>
+                      <div class="navigation__three-wrap-item-text">전자복권</div>
+                      <div class="navigation__three-wrap-item-text">즉석식 인쇄복권</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="navigation__four navi" id="four">
+              <div class="container">
+                <div class="navigation__four-wrap">
+                  <div class="navigation__four-wrap-item">
+                    <div class="navigation__two-wrap-item-box">
+                      <div class="navigation__two-wrap-item-title">구입처 안내</div>
+                      <div class="navigation__two-wrap-item-text">로또 6/45판매점 조회</div>
+                      <div class="navigation__two-wrap-item-text">즉석 및 연금복권 판매점<br>조회</div>
+                    </div>
+                  </div>
+                  <div class="navigation__four-wrap-item">
+                    <div class="navigation__two-wrap-item-box">
+                      <div class="navigation__two-wrap-item-title">당첨판매점</div>
+                      <div class="navigation__two-wrap-item-text">회차별</div>
+                      <div class="navigation__two-wrap-item-text">1등 판매점</div>
+                      <div class="navigation__two-wrap-item-text">2등 판매점</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navigation__five navi" id="five">
+              <div class="container">
+                <div class="navigation__five-wrap">
+                  <div class="navigation__five-wrap-item">
+                    <div class="navigation__two-wrap-item-box">
+                      <div class="navigation__two-wrap-item-title">이벤트</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="navigation__six navi" id="six">
+              <div class="container">
+                <div class="navigation__six-wrap">
+                  <div class="navigation__six-wrap-item">
+                    <div class="navigation__two-wrap-item-box">
+                      <div class="navigation__two-wrap-item-title">건전한 복권문화</div>
+                      <div class="navigation__two-wrap-item-text">복권바로알기</div>
+                      <div class="navigation__two-wrap-item-text">건전구매 프로그램</div>
+                      <div class="navigation__two-wrap-item-text">건전화 캠페인</div>
+                      <div class="navigation__two-wrap-item-text">건전화 책임규정</div>
+                      <div class="navigation__two-wrap-item-text">복권 과몰입 예방법</div>
+                      <div class="navigation__two-wrap-item-text">중독예방 및 상담안내</div>
+                    </div>
+                  </div>
+                  <div class="navigation__six-wrap-item">
+                    <div class="navigation__two-wrap-item-box">
+                      <div class="navigation__two-wrap-item-title">복권기금</div>
+                      <div class="navigation__two-wrap-item-text">복권기금 소개</div>
+                      <div class="navigation__two-wrap-item-text">기금사업활동</div>
+                    </div>
+                  </div>
+                  <div class="navigation__six-wrap-item">
+                    <div class="navigation__two-wrap-item-box">
+                      <div class="navigation__two-wrap-item-title">행복공감봉사단</div>
+                    </div>
+                  </div>
+                  <div class="navigation__six-wrap-item">
+                    <div class="navigation__two-wrap-item-box">
+                      <div class="navigation__two-wrap-item-title">홍보센터</div>
+                      <div class="navigation__two-wrap-item-text">광고</div>
+                      <div class="navigation__two-wrap-item-text">보도자료</div>
+                      <div class="navigation__two-wrap-item-text">공지사항</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- 카달로그 끝-->
+  <!-- 메뉴 시작-->
+  <div class="menu">
+    <div class="container">
+      <div class="menu__box-wrap">
+        <div class="menu__box-left">
+          <div class="menu__box-left-top">
+            <div class="menu__box-left-top-title">로또 6/45</div>
+          </div>
+          <div class="menu__box-left-middle">
+            <div class="menu__box-left-middle-wrap">
+              <div class="menu__box-left-middle-title">
+                895회 <span class="menu__box-left-middle-title--light">당첨결과</span>
+              <span class="menu__box-left-middle-title-day">
+              2020-01-25
+              </span></div>
+              <ui class="menu__box-left-middle-number-wrap">
+                <li class="menu__box-left-middle-number number__color-one">16</li>
+                <li class="menu__box-left-middle-number number__color-two">26</li>
+                <li class="menu__box-left-middle-number number__color-three">31</li>
+                <li class="menu__box-left-middle-number number__color-four">38</li>
+                <li class="menu__box-left-middle-number number__color-five">39</li>
+                <li class="menu__box-left-middle-number number__color-six">41</li>
+                <li class="menu__box-left-middle-number number__color-seven">23</li>
+              </ui>
+              <img class="menu__box-left-middle-bonus-number"src="./assets/images/02.menu/ico_bonus_number.png" alt="">
+              <div class="menu__box-left-middle-prize">
+                1등 12게임 
+                <span class="menu__box-left-middle-prize--bold">총 당첨금액 약 231억원</span>
+                <span class="menu__box-left-middle-prize-content">
+                (1게임당 당첨금액 약 19억원)
+                </span></div>
+            </div>
+          </div>
+          <div class="menu__box-left-bottom">
+            <div class="menu__box-left-bottom-wrap">
+              <div class="menu__box-left-bottom-item">
+                <div class="menu__box-left-bottom-title">
+                  다음회차
+                  <span class="menu__box-left-bottom-title-prize">
+                    2020-01-29 23:55 현재
+                  </span>
+                </div>
+                <div class="menu__box-left-bottom-result">회차별 당첨결과 ▶</div>
+              </div>
+              <div class="menu__box-left-bottom-box-wrap">
+                <table class="menu__box-left-bottom-box-table">
+                  <thead>
+                    <tr>
+                      <th class="menu__box-left-bottom-box-top">예상당첨금</th>
+                      <th class="menu__box-left-bottom-box-top">누적판매금</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="menu__box-left-bottom-box-top menu__box-change">
+                        <img class="menu__box-left-bottom-box-img"src="./assets/images/02.menu/ico_won_white.png" alt="">
+                        <span>6,030,020,142</span>
+                      </td>
+                      <td class="menu__box-left-bottom-box-top menu__box-change">
+                        <img class="menu__box-left-bottom-box-img"src="./assets/images/02.menu/ico_won_white.png" alt="">
+                        <span>25,072,114,000</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <button class="menu__box-left-bottom-button">
+                  구매하기
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="menu__box-center">
+          <div class="menu__box-center-wrap">
+            <div class="menu__box-center-top">
+              <div class="menu__box-center-top-title">연금복권 520</div>
+            </div>
+            <div class="menu__box-center-middle">
+              <div class="menu__box-center-middle-wrap">
+                <div class="menu__box-center-middle-title">448회 당첨결과</div>
+                <div class="menu__box-center-middle-title-day">[2020-01-29]</div>    
+            </div>
+            <div class="menu__box-center-middle-box-wrap">
+              <ul class="menu__box-center-middle-box-number">
+                <li class="menu__box-center-middle-big-number">1조</li>
+                <li class="menu__box-center-middle-number">5</li>
+                <li class="menu__box-center-middle-number">5</li>
+                <li class="menu__box-center-middle-number">8</li>
+                <li class="menu__box-center-middle-number">7</li>
+                <li class="menu__box-center-middle-number">2</li>
+                <li class="menu__box-center-middle-number">4</li>
+              </ul>
+            </div>
+            <div class="menu__box-center-middle-box-wrap">
+              <ul class="menu__box-center-middle-box-number">
+                <li class="menu__box-center-middle-big-number">5조</li>
+                <li class="menu__box-center-middle-number">8</li>
+                <li class="menu__box-center-middle-number">4</li>
+                <li class="menu__box-center-middle-number">0</li>
+                <li class="menu__box-center-middle-number">0</li>
+                <li class="menu__box-center-middle-number">3</li>
+                <li class="menu__box-center-middle-number">9</li>
+              </ul>
+            </div>
+            <div class="menu__box-middle-content">
+              <div class="menu__box-center-middle-content">1등</div>
+              <div class="menu__box-center-middle-content-prize">매달 500만원씩 20년 지급</div>
+            </div>
+          </div>
+          <div class="menu__box-center-bottom">
+            <div class="menu__box-center-bottom-img-wrap">
+              <img class="menu__box-center-bottom-img"src="./assets/images/02.menu/img_lottery_win520.png" alt="">
+            </div>
+            <button class="menu__box-center-bottom-button-result">회차별 당첨결과</button>
+            <button class="menu__box-center-bottom-button-buy">구매하기</button>
+          </div>
+          </div>
+        </div>
+        <div class="menu__box-right">
+          <div class="menu__box-right-wrap">
+            <div class="menu__box-right-top">
+              <div class="menu__box-right-top-title">즉석식 인쇄복권</div>
+            </div>
+            <div class="menu__box-right-middle">
+              <div class="menu__box-right-middle-wrap">
+                <div class="menu__box-right-middle-text-present">판매/당첨 현황</div>
+                <div class="menu__box-right-middle-text-day">[2020-01-23]</div>
+              </div>
+              <div class="menu__box-right-middle-text-speed">스피또 2000 32회</div>
+              <img class="menu__box-right-middle-text-img"src="./assets/images/02.menu/1579486743175.png" alt="">
+              <div class="menu__box-right-middle-text-quantity">남은 수량</div>
+              <div class="menu__box-right-middle-ranking-wrap">
+                <div class="menu__box-right-middle-ranking-header">
+                  <div class="menu__box-right-middle-ranking-head">
+                    <div class="menu__box-right-middle-ranking">1등 10억</div>
+                    <div class="menu__box-right-middle-ranking-piece">4 매</div>
+                    <img class="menu__box-right-middle-img"src="./assets/images/02.menu/bg_speetto_1st.png" alt="">
+                  </div>
+                  <div class="menu__box-right-middle-ranking-head">
+                    <div class="menu__box-right-middle-ranking">2등 1억</div>
+                    <div class="menu__box-right-middle-ranking-piece">12 매</div>
+                    <img class="menu__box-right-middle-img"src="./assets/images/02.menu/bg_speetto_2nd.png" alt="">
+                  </div>
+                  <div class="menu__box-right-middle-ranking-head">
+                    <div class="menu__box-right-middle-ranking">3등 천백</div>
+                    <div class="menu__box-right-middle-ranking-piece">100 배</div>
+                    <img class="menu__box-right-middle-img"src="./assets/images/02.menu/bg_speetto_3rd.png" alt="">
+                  </div>
+                  <div class="menu__box-right-middle-ranking-head">
+                    <div class="menu__box-right-middle-ranking-release">출고율<br>10.0%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <!-- 메뉴 끝-->
+  <!-- Internet-lottery시작-->
+  <div class="internet__lottery">
+    <div class="container">
+      <div class="internet__lottery-wrap">
+        <div class="internet__lottery-left">
+          <div class="internet__lottery-left-title">
+            <div class="internet__lottery-left-title-big">전자복권</div>
+            <div class="internet__lottery-left-title-small">+</div>
+          </div>
+          <div class="internet__lottery-left-bigbox-wrap">
+            <div class="internet__lottery-left-bigbox-item">
+              <div class="internet__lottery-left-img-wrap">
+                <img class="internet__lottery-left-img"src="./assets/images/03.Internet-lottery/img_inbok_520.jpg" alt="">
+              </div>
+              <div class="internet__lottery-left-img-button-wrap">
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--green">구매하기</button>
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--gray">이용안내</button>
+              </div>
+            </div>
+            <div class="internet__lottery-left-bigbox-item">
+              <div class="internet__lottery-left-img-wrap">
+                <img class="internet__lottery-left-img"src="./assets/images/03.Internet-lottery/img_inbok_pb.jpg" alt="">
+              </div>
+              <div class="internet__lottery-left-img-button-wrap">
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--green">구매하기</button>
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--gray">이용안내</button>
+              </div>
+            </div>
+            <div class="internet__lottery-left-bigbox-item">
+              <div class="internet__lottery-left-img-wrap">
+                <img class="internet__lottery-left-img"src="./assets/images/03.Internet-lottery/img_inbok_sk.jpg" alt="">
+              </div>
+              <div class="internet__lottery-left-img-button-wrap">
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--green">구매하기</button>
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--gray">이용안내</button>
+              </div>
+            </div>
+            <div class="internet__lottery-left-bigbox-item">
+              <div class="internet__lottery-left-img-wrap">
+                <img class="internet__lottery-left-img"src="./assets/images/03.Internet-lottery/img_inbok_mb.jpg" alt="">
+              </div>
+              <div class="internet__lottery-left-img-button-wrap">
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--green">구매하기</button>
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--gray">이용안내</button>
+              </div>
+            </div>
+          </div>
+          <div class="internet__lottery-left-bigbox-wrap">
+            <div class="internet__lottery-left-bigbox-item">
+              <div class="internet__lottery-left-img-wrap">
+                <img class="internet__lottery-left-img"src="./assets/images/03.Internet-lottery/img_inbok_tl.jpg" alt="">
+              </div>
+              <div class="internet__lottery-left-img-button-wrap">
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--green">구매하기</button>
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--gray">이용안내</button>
+              </div>
+            </div>
+            <div class="internet__lottery-left-bigbox-item">
+              <div class="internet__lottery-left-img-wrap">
+                <img class="internet__lottery-left-img"src="./assets/images/03.Internet-lottery/img_inbok_th.jpg" alt="">
+              </div>
+              <div class="internet__lottery-left-img-button-wrap">
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--green">구매하기</button>
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--gray">이용안내</button>
+              </div>
+            </div>
+            <div class="internet__lottery-left-bigbox-item">
+              <div class="internet__lottery-left-img-wrap">
+                <img class="internet__lottery-left-img"src="./assets/images/03.Internet-lottery/img_inbok_cm.jpg" alt="">
+              </div>
+              <div class="internet__lottery-left-img-button-wrap">
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--green">구매하기</button>
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--gray">이용안내</button>
+              </div>
+            </div>
+            <div class="internet__lottery-left-bigbox-item">
+              <div class="internet__lottery-left-img-wrap">
+                <img class="internet__lottery-left-img"src="./assets/images/03.Internet-lottery/img_inbok_dj.jpg" alt="">
+              </div>
+              <div class="internet__lottery-left-img-button-wrap">
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--green">구매하기</button>
+                <button class="internet__lottery-left-img-button internet__lottery-left-img-button--gray">이용안내</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="internet__lottery-right">
+          <div class="internet__lottery-right-wrap">
+            <div class="internet__lottery-right-title">실시간 잭팟 당첨금</div>
+            <div class="internet__lottery-right-list-wrap">
+              <div class="internet__lottery-right-list">파워볼</div>
+              <div class="internet__lottery-right-list-number">50,379,230</div>  
+              <img class="internet__lottery-right-list-img"src="./assets/images/03.Internet-lottery/ico_won_blue.jpg" alt="">   
+            </div>
+            <div class="internet__lottery-right-list-wrap">
+              <div class="internet__lottery-right-list">스피드키노</div>
+              <div class="internet__lottery-right-list-number">33,495,248</div>  
+              <img class="internet__lottery-right-list-img"src="./assets/images/03.Internet-lottery/ico_won_blue.jpg" alt="">   
+            </div>
+            <div class="internet__lottery-right-list-wrap">
+              <div class="internet__lottery-right-list">메가빙고</div>
+              <div class="internet__lottery-right-list-number">32,249,077</div>  
+              <img class="internet__lottery-right-list-img"src="./assets/images/03.Internet-lottery/ico_won_blue.jpg" alt="">   
+            </div>
+            <div class="internet__lottery-right-list-wrap">
+              <div class="internet__lottery-right-list">트리플럭</div>
+              <div class="internet__lottery-right-list-number">500,000,000</div>  
+              <img class="internet__lottery-right-list-img"src="./assets/images/03.Internet-lottery/ico_won_blue.jpg" alt="">   
+            </div>
+            <div class="internet__lottery-right-list-wrap">
+              <div class="internet__lottery-right-list">캐치미</div>
+              <div class="internet__lottery-right-list-number">10,000,000</div>  
+              <img class="internet__lottery-right-list-img"src="./assets/images/03.Internet-lottery/ico_won_blue.jpg" alt="">   
+            </div>
+            <div class="internet__lottery-right-list-wrap">
+              <div class="internet__lottery-right-list">트레져헌터</div>
+              <div class="internet__lottery-right-list-number">9,892,831</div>  
+              <img class="internet__lottery-right-list-img"src="./assets/images/03.Internet-lottery/ico_won_blue.jpg" alt="">   
+            </div>
+            <div class="internet__lottery-right-list-wrap">
+              <div class="internet__lottery-right-list">더블잭마이더스</div>
+              <div class="internet__lottery-right-list-number">35,388,139</div>  
+              <img class="internet__lottery-right-list-img"src="./assets/images/03.Internet-lottery/ico_won_blue.jpg" alt="">   
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Internet-lottery 끝-->
+  <!-- middle 시작-->
+  <div class="middle">
+    <div class="container">
+      <div class="middle__wrap">
+        <div class="middle__header">
+          <div class="middle__head">
+            <div class="middle__head-one">
+              <div class="middle__one-wrap">
+                <div class="middle__one-wrap-img">
+                  <img class="middle__one-img"src="./assets/images/04.middle/logo_itv_LP32.png" alt="">
+                  <button class="middle__one-button">당첨자인터뷰</button>
+                </div>
+                <div class="middle__one-text-title">주머니 속 잔돈이 불<br>
+                  러온 행운, 연금복권 1</div>
+                <div class="middle__one-text-day">2020-01-22</div>
+              </div>
+              <div class="middle__one-wrap">
+                <div class="middle__one-wrap-img">
+                  <img class="middle__one-img"src="./assets/images/04.middle/logo_itv_LP34.png" alt="">
+                  <button class="middle__one-button">당첨자인터뷰</button>
+                </div>
+                <div class="middle__one-text-title">스피또 1등 당첨 덕에
+                  <br>하고 싶었던 일에 도
+                </div>
+                <div class="middle__one-text-day">2020-01-17</div>
+              </div>
+            </div>
+            <div class="middle__head-two">
+              <div class="middle__two-wrap">
+                <div class="middle__two-title">
+                  <button class="middle__two-title-button on" data-button="left">공지사항</button>
+                  <button class="middle__two-title-button" data-button="right">언론보도</button>
+                  <div class="middle__two-title-plus">+</div>
+                </div>
+              </div>
+              <div class="middle__two-list-wrap on" id="lefttext">
+                <ul>
+                  <li class="middle__two-list">
+                    <div class="middle__two-list-text">(1/24,금)사이트 점검 안내</div>
+                    <div class="middle__two-list-day">2020.01.23</div>
+                  </li>
+                  <li class="middle__two-list">
+                    <div class="middle__two-list-text">(1/23,목)사이트 점검 안내</div>
+                    <div class="middle__two-list-day">2020.01.22</div> 
+                  </li>
+                  <li class="middle__two-list">
+                    <div class="middle__two-list-text">(1/7,화) 사이트 점검안내</div>
+                    <div class="middle__two-list-day">2020.01.06</div>
+                  </li>
+                </ul>
+              </div>
+              <div class="middle__two-list-wrap" id="righttext">
+                <ul>
+                  <li class="middle__two-list"> 
+                    <div class="middle__two-list-text">나이 70에 과학공부"로또,···</div>
+                    <div class="middle__two-list-day">2020.01.16</div>
+                  </li>
+                  <li class="middle__two-list"> 
+                    <div class="middle__two-list-text">복권기금,아동 및 청소년···</div>
+                    <div class="middle__two-list-day">2019.12.27</div> 
+                  </li>
+                  <li class="middle__two-list"> 
+                    <div class="middle__two-list-text">복권위원회·동행복권,낙첨···</div>
+                    <div class="middle__two-list-day">2019.12.16</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="middle__head">
+            <div class="middle__head-three">
+              <div class="middle__head-three-wrap">
+                <div class="middle__head-three-title">
+                  <span class="middle__head-three-title-clolr">
+                    판매액의 42%이상</span>이 복권기금이 <br>
+                    되어 소외계층에 사용되고 있습니다.
+                </div>
+                <ui class="middle__head-three-list-wrap">
+                  <li class="middle__head-three-list">법정배분사업</li>
+                  <li class="middle__head-three-list">주거안정사업</li>
+                  <li class="middle__head-three-list">소외계층사업</li>
+                  <li class="middle__head-three-list">문화예술사업</li>
+                </ui> 
+                <img class="middle__head-three-list-img"src="./assets/images/04.middle/bg_fund.png" alt="">
+                <div class="middle__head-three-box-wrap">
+                  <div class="middle__head-three-box-text">2020년 복권기금 누적액</div>
+                  <div class="middle__head-three-box-text-money">₩ 175,842,481,008</div>
+                </div>
+                <div class="middle__head-three-box-cut">복권기금 알아보기  
+                  <span class="middle__head-three-box-errow">   ></span></div>
+              </div>
+            </div>
+            <div class="middle__head-four">
+              <div class="middle__head-four-title-wrap">
+                <div class="middle__head-four-title">행복더하기 신청</div>
+                <div class="middle__head-four-text">매일 새로운 복권소식과<br>함께하세요.</div>
+              </div>
+              <img class="middle__head-four-img"src="./assets/images/04.middle/bg_happyplus.png" alt="">
+            </div>
+          </div>
+          <div class="middle__head-five">
+            <div class="middle__head-five-wrap">
+              <div class="middle__head-five-item">
+                <div class="middle__head-five-parent">
+                  <img class="middle__head-five-parent-img"src="./assets/images/04.middle/ico_link_cafe.png" alt="">
+                  <div class="middle__head-five-text-wrap">
+                    <div class="middle__head-five-text">동행복권 Cafe</div>
+                    <div class="middle__head-five-text middle__head-five-text-thin">함께하는 재미와 이벤트!</div>
+                  </div>
+                </div>
+                <div class="middle__head-five-parent">
+                  <img class="middle__head-five-parent-img"src="./assets/images/04.middle/ico_link_blog.png" alt="">
+                  <div class="middle__head-five-text-wrap">
+                    <div class="middle__head-five-text">동행복권 Blug</div>
+                    <div class="middle__head-five-text middle__head-five-text-thin">댜양한 재미가 팡팡!</div>
+                  </div>
+                </div>
+                <div class="middle__head-five-parent">
+                  <img class="middle__head-five-parent-img"src="./assets/images/04.middle/ico_link_fb.png" alt="">
+                  <div class="middle__head-five-text-wrap">
+                    <div class="middle__head-five-text">동행복권 Facebook</div>
+                    <div class="middle__head-five-text middle__head-five-text-thin">친구신청으로 이벤트 정보가 쏙쏙!</div>
+                  </div>
+                </div>
+                <div class="middle__head-five-parent">
+                  <img class="middle__head-five-parent-img"src="./assets/images/04.middle/ico_link_yb.png" alt="">
+                  <div class="middle__head-five-text-wrap">
+                    <div class="middle__head-five-text">동행복권 YouTube</div>
+                    <div class="middle__head-five-text middle__head-five-text-thin">복권에 대한 영상 정보를 보는 곳!</div>
+                  </div>
+                </div>
+                <div class="middle__head-five-parent">
+                  <img class="middle__head-five-parent-img"src="./assets/images/04.middle/ico_link_news.png" alt="">
+                  <div class="middle__head-five-text-wrap">
+                    <div class="middle__head-five-text">동행복권 News Letter</div>
+                    <div class="middle__head-five-text middle__head-five-text-thin">복권에 대한 알찬 정보가 있는 곳!</div>
+                  </div>
+                </div>
+                <div class="middle__head-five-parent middle__head-five-parent--border">
+                  <img class="middle__head-five-parent-img"src="./assets/images/04.middle/ico_link_app2.png" alt="">
+                  <div class="middle__head-five-text-wrap">
+                    <div class="middle__head-five-text">동행복권 공식 APP</div>
+                    <div class="middle__head-five-text middle__head-five-text-thin">모든 복권 정보가 한곳에!</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="middle__head-six">
+            <div class="middle__head-six-wrap">
+              <div class="middle__head-six-wrap-text-box">
+                <div class="middle__head-six-wrap-text-one">도박중독,복권과몰입<br>전문 상담기구</div>
+                <div class="middle__head-six-wrap-text-two">동행클린센터</div>
+                <div class="middle__head-six-wrap-text-three">도박문제 전문상담<br>
+                  <span class="middle__head-six-wrap-text-four">080-800-0501</span></div>
+              </div>
+              <div class="middle__head-six-box-wrap">
+                <div class="middle__head-six-box-wrap-item">
+                  <img class="middle__head-six-box-wrap-img"src="./assets/images/04.middle/ico_self1.png" alt="">
+                  <div class="middle__head-six-box-wrap-text">
+                    <div class="middle__head-six-text">셀프 진단평가</div>
+                    <div class="middle__head-six-text-arrow">></div>
+                  </div>
+                </div>
+                <div class="middle__head-six-box-wrap-item">
+                  <img class="middle__head-six-box-wrap-img"src="./assets/images/04.middle/ico_self2.png" alt="">
+                  <div class="middle__head-six-box-wrap-text">
+                    <div class="middle__head-six-text">셀프 구매계획</div>
+                    <div class="middle__head-six-text-arrow">></div>
+                  </div>
+                </div>
+                <div class="middle__head-six-box-wrap-item">
+                  <img class="middle__head-six-box-wrap-img"src="./assets/images/04.middle/ico_self3.png" alt="">
+                  <div class="middle__head-six-box-wrap-text">
+                    <div class="middle__head-six-text">셀프 휴식계획</div>
+                    <div class="middle__head-six-text-arrow">></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- middle 끝-->
+  <!-- notice 시작-->
+  <div class="notice">
+    <div class="container">
+      <div class="notice__wrap">
+        <div class="notice__wrap-header">
+          <div class="notice__wrap-item">
+            <div class="notice__wrap-title">게임구매</div>
+            <div class="notice__wrap-content">
+              <div class="notice__wrap-content-text">로또6/45</div>
+              <div class="notice__wrap-content-text">연금복권520</div>
+              <div class="notice__wrap-content-text">파워볼</div>
+              <div class="notice__wrap-content-text">스피드키노</div>
+              <div class="notice__wrap-content-text">메가빙고</div>
+              <div class="notice__wrap-content-text">트리플럭</div>
+              <div class="notice__wrap-content-text">캐치미</div>
+              <div class="notice__wrap-content-text">트래져헌터</div>
+              <div class="notice__wrap-content-text">더블잭마이더스</div>
+            </div>
+          </div>
+          <div class="notice__wrap-item">
+            <div class="notice__wrap-title">게임정보</div>
+            <div class="notice__wrap-content">
+              <div class="notice__wrap-content-text">로또6/45</div>
+              <div class="notice__wrap-content-text">연금복권520</div>
+              <div class="notice__wrap-content-text">전자복권</div>
+              <div class="notice__wrap-content-text">즉석식인쇄복권</div>
+            </div>
+            </div>
+          <div class="notice__wrap-item">
+            <div class="notice__wrap-title">게임결과</div>
+            <div class="notice__wrap-content">
+              <div class="notice__wrap-content-text">로또6/45</div>
+              <div class="notice__wrap-content-text">연금복권520</div>
+              <div class="notice__wrap-content-text">전자복권</div>
+              <div class="notice__wrap-content-text">즉석식인쇄복권</div>
+              <div class="notice__wrap-content-text">로또6/45 당첨통계</div>
+              <div class="notice__wrap-content-text">연금복권520 당첨통계</div>
+              <div class="notice__wrap-content-text">당첨소식</div>
+              <div class="notice__wrap-content-text">미수령당첨금</div>
+            </div>
+          </div>
+          <div class="notice__wrap-item">
+            <div class="notice__wrap-title">판매점</div>
+            <div class="notice__wrap-content">
+              <div class="notice__wrap-content-text">로또6/45판매점조회</div>
+              <div class="notice__wrap-content-text">즉석 및 연금복권 판매점 <br>조회</div>
+            </div>
+          </div>
+          <div class="notice__wrap-item">
+            <div class="notice__wrap-title">이벤트</div>
+            <div class="notice__wrap-content">
+              <div class="notice__wrap-content-text">이벤트</div>
+            </div>
+          </div>
+          <div class="notice__wrap-item notice__wrap-item-border">
+            <div class="notice__wrap-title">행복공감</div>
+            <div class="notice__wrap-content">
+              <div class="notice__wrap-content-text">건전한 복권문화</div>
+              <div class="notice__wrap-content-text">복권기금</div>
+              <div class="notice__wrap-content-text">행복공감봉사단</div>
+              <div class="notice__wrap-content-text">홍보센터</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- notice 끝-->
+  <!-- bottom 시작-->
+  <div class="bottom">
+    <div class="container">
+      <div class="bottom__wrap">
+        <div class="bottom__wrap-item-box">
+          <div class="bottom__wrap-item">
+            <img class="bottom__wrap-item-img"src="./assets/images/05.bottom/img_link1.gif" alt="">
+          </div>
+          <div class="bottom__wrap-item">
+            <img class="bottom__wrap-item-img"src="./assets/images/05.bottom/img_link2.gif" alt="">
+          </div>
+          <div class="bottom__wrap-item">
+            <img class="bottom__wrap-item-img"src="./assets/images/05.bottom/img_link3.gif" alt="">
+          </div>
+          <div class="bottom__wrap-item">
+            <img class="bottom__wrap-item-img"src="./assets/images/05.bottom/img_link4.gif" alt="">
+          </div>
+          <div class="bottom__wrap-item bottom__wrap-item-img-margin">
+            <img class="bottom__wrap-item-img"src="./assets/images/05.bottom/img_link5.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- introduction 시작-->
+  <div class="introduction">
+    <div class="container">
+      <div class="introduction__text-wrap">
+        <div class="introduction__text">이용약관</div>
+        <div class="introduction__text introduction__text--bold">개인정보 처리방침</div>
+        <div class="introduction__text introduction__text--bold">인쇄복권 당첨금 지급 기준</div>
+        <div class="introduction__text">불법사행행위신고센터</div>
+        <div class="introduction__text">수탁사업자 소개</div>
+        <div class="introduction__text">ENGLISH</div>
+      </div>
+    </div>
+  </div>
+  <!-- introduction 끝-->
+  <!-- address 시작-->
+  <div class="address">
+    <div class="container">
+      <div class="address__wrap">
+        <div class="address__wrap-item">
+          <img class="address__wrap-item-img"src="./assets/images/06.address/logo-footer.png" alt="">
+          <button class="address__wrap-item-button">사업자정보확인</button>
+        </div>  
+        <div class="address__wrap-item-text">
+            수탁사업자 (주)동행복권
+            <span class="address__wrap-item-text-margin">주소 : 06719 서울 서초구 남부순환로 2423 한원빌딩 4층</span>
+            <span class="address__wrap-item-text-margin">고객문의 1588-6450 </span>
+            <span class="address__wrap-item-text-margin">FAX 02-6933-3063</span><br>
+            대표자 : 조형섭, 김세중
+            <span class="address__wrap-item-text-margin">사업자등록번호 866-87-00833</span>
+            <span class="address__wrap-item-text-margin">통신판매사업자번호 : 제2018 - 서울서초 - 2075호<br>
+              <div class="address__wrpa-itme-text-margin-top">
+            Copyright (c) 2018 복권위원회&동행복권. All rights reserved</div><br>
+            <span class="address__wrap-item-text-font-size">
+            본 홈페이지는 게시된 이메일 주소가 자동 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하여 주시길 바랍니다.<br>
+            청소년은 복권을 구매하거나 당첨금을 수령할 수 없습니다.</span><br>
+            <div class="address__wrpa-itme-text-margin-top">
+            본 사이트는 Internet Explorer 11, Edge, Chrome, Safari 브라우저에 최적화되어 있습니다.</div>
+        </div>  
+        <div class="address__wrap-item-right">
+          <img class="address__wrap-item-right-img"src="./assets/images/06.address/logo_gic.jpg" alt="">
+          <img class="address__wrap-item-right-img"src="./assets/images/06.address/logo_ias.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- address 끝-->
+  <!-- right-banner 시작-->
+  <div class="right-banner">
+    <div class="right-banner__wrap">
+      <ul class="right-banner__wrap-item">
+        <li class="right-banner__wrap-item-union union-one">나의복권<br>권전지수</li>
+        <li class="right-banner__wrap-item-union union-two">건전구매<br>캠페인</li>
+        <li class="right-banner__wrap-item-union union-three">건전구매<br>서약</li>
+        <li class="right-banner__wrap-item-union union-four">자기관리<br>프로그램</li>
+        <li class="right-banner__wrap-item-union union-five">동행<br>클린센터</li>
+      </ul>
+    </div>
+    <div class="right-banner__arrow">
+      <div class="right-banner__arrow-item"></div>
+    </div>
+  </div>
+  <!-- right-banner 끝-->
+  <script src="./js/lotto.js"></script>
+
+</body>
+
+</html>
+
+
